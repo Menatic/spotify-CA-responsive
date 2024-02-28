@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: DM Sans;
+    text-decoration: none;
+}
+
+body{
+    background-image: linear-gradient(100deg,rgb(54, 54, 54),black);
+}
+
+.main{
+    display: flex;
+    flex-direction: row; /* default layout */
+}
+
+.sidenav{
+    color: white;
+    background-color: black;
+    height: 40em;
+    width: 250px;
+    top: 0; 
+    left: 0;
+}
+
+.logo img {
+    margin: 30px 30px;
+    width: 60%;
+    height: 60%;
+}
+
+.navcontent1 img,
+.navcontent2 img,
+.navcontent4 img {
+    padding: 15px 0px 0px 30px;
+    width:20px;
+    height:20px;
+}
+
+.navcontent3 a{
+    margin-left: 30px;
+    padding-top: 65px;
+}
+
+.navcontent4{
+    padding-top: 55px;
+    padding-bottom: 25px;
+}
+
+.boxes{
+    display: flex;
+    gap: 2%;
+    margin-left: 30px;
+}
+
+.boxes div img{
+    width: 82px;
+    height: 82px;
+}
+
+.boxes div{
+    border: 2px solid  rgb(130, 128, 128);
+    width: 250px;
+    height:80px;
+    background-color: rgb(130, 128, 128);
+    border-radius: 4px;
+}
+
+.singers{
+    display: flex;
+    justify-content: space-between;
+    gap: 2.5%;
+    margin-left: 2.5%;
+}
+
+.singers div {
+    border: 2px solid rgb(30, 30, 30);
+    background-color: rgb(32, 32, 32);
+    padding: 2%;
+}
+
+.con2 p{
+    margin-top: 100px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    color: white;
+    font-size: 45px;
+}
+
+.subject2content{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 100px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    color: white;
+    font-size: 25px;
+}
+
+.boxes div {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    color: white;
+}
+
+.boxes div p{
+    margin: 20px;
+}
+
+#img69{
+    width: 600px;
+    height: 90px;
+    padding-left: 170px;
+}
+
+#img71{
+    width: 300px;
+    height: 60px;
+    padding-left: 50px;
+}
+
+@media screen and (max-width: 768px) {
+    .main {
+        flex-direction: column; 
+    }
+    .sidenav {
+        width: 100%; 
+    }
+    .navcontent3 a{
+        padding-top: 30px; 
+    }
+    .boxes {
+        margin-left: 20px; 
+    }
+    .singers {
+        margin-left: 0; 
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .main {
+        flex-direction: column; 
+    }
+    .sidenav {
+        width: 100%; 
+    }
+    .navcontent1 ul,
+    .navcontent2 ul,
+    .navcontent3 ul {
+        flex-direction: column; 
+    }
+    .navcontent1 img,
+    .navcontent2 img,
+    .navcontent3 li {
+        margin: 0 auto;
+    }
+}
